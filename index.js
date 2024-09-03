@@ -15,19 +15,7 @@
         }
         let isAutoPlaying=false;
         let intervalId;
-        function autoplay(){
-            if(!isAutoPlaying){
-                 intervalId=setInterval(()=>{
-                    const playermove=fn();
-                    gamePlay(playermove);
-                },1000);
-            isAutoPlaying=true;
-            }
-           else{
-            clearInterval(intervalId);
-            isAutoPlaying=false;
-           }
-        }
+
         document.querySelector('.rock-btn').addEventListener('click',()=>{
             gamePlay('rock');
         });
