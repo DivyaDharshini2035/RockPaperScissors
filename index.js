@@ -13,7 +13,7 @@
              localStorage.removeItem('score');
              updateScore();
         }
-        let isAutoPlaying=false;
+      
         let intervalId;
 
         document.querySelector('.rock-btn').addEventListener('click',()=>{
